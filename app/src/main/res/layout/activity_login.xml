@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/imgPlaylistItemBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:maxHeight="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/svbg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/skip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/btn_blk"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/outline_admin_panel_settings_24"
+                android:layout_marginEnd="15dp"
+                android:padding="9dp"
+                android:elevation="7dp"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:elevation="4dp"
+                android:fontFamily="@font/calibrib"
+                android:text="Sensivision Health Poll"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/accessLevel"
+                android:layout_below="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:elevation="4dp"
+                android:fontFamily="@font/calibri"
+                android:text="Logging as : USER"
+                android:textAlignment="center"
+                android:textColor="#0c1011"
+                android:textSize="19sp"
+                tools:ignore="RtlCompat" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:background="@drawable/edittext_curved"
+                android:elevation="7dp"
+                android:minHeight="52dp"
+                android:orientation="horizontal">
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/pkr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="5dp"
+                    app:ccp_defaultLanguage="ENGLISH"
+                    app:ccp_defaultNameCode="IND"
+                    app:ccp_defaultPhoneCode="91"
+                    app:ccp_showArrow="true"
+                    app:ccp_showFlag="true"
+                    app:ccp_showNameCode="true" />
+
+                <EditText
+                    android:id="@+id/editText_carrierNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="10dp"
+                    android:background="@null"
+                    android:hint="Phone Number"
+                    android:inputType="phone"
+                    android:textColor="#100E0E"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColorHint="#b7b7b7" />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/sendotp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_curved_round"
+                android:minHeight="52dp"
+                android:text="Login"
+                android:textAllCaps="false"
+                android:textColor="#dddddd"
+                android:backgroundTint="#0c1011"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/emaillogin">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/calibrib"
+                    android:text="OR"
+                    android:textColor="#fff"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="22dp"
+                    android:textSize="18sp"/>
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:background="@drawable/edittext_curved"
+                android:elevation="7dp"
+                android:id="@+id/emaillogin"
+                android:layout_above="@id/otherholder"
+                android:minHeight="52dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:drawableStart="@drawable/baseline_troubleshoot_24"
+                    android:drawableTint="#252525"
+                    android:fontFamily="@font/calibri"
+                    android:gravity="center"
+                    android:onClick="Alert"
+                    android:text="Trouble Logging in ??"
+                    android:textColor="#252525"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:minHeight="52dp"
+                android:id="@+id/otherholder"
+                android:layout_above="@id/tos"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/fb"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_curved"
+                    android:drawableStart="@drawable/facebook"
+                    android:drawablePadding="20dp"
+                    android:elevation="7dp"
+                    android:gravity="center_vertical"
+                    android:minHeight="52dp"
+                    android:orientation="horizontal"
+                    android:paddingStart="15dp"
+                    android:fontFamily="@font/calibri"
+                    android:text="Facebook"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textColor="#252525"
+                    android:textSize="18sp"
+                    tools:ignore="RtlCompat" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/google"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_curved"
+                    android:drawableStart="@drawable/google"
+                    android:drawablePadding="20dp"
+                    android:elevation="7dp"
+                    android:gravity="center_vertical"
+                    android:minHeight="52dp"
+                    android:orientation="horizontal"
+                    android:paddingStart="15dp"
+                    android:text="Google"
+                    android:fontFamily="@font/calibri"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textColor="#252525"
+                    android:textSize="18sp"
+                    tools:ignore="RtlCompat" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/tos"
+                android:fontFamily="@font/calibri"
+                android:text="By continuning you are agreeing to our \nTerms of service, privacy policy, Content Policy."
+                android:textAlignment="center"
+                android:textColor="#E3E3E3"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

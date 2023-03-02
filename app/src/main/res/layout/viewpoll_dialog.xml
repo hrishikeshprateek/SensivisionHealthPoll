@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="225dp"
+        app:cardBackgroundColor="#2d2d39"
+        app:cardCornerRadius="20dp"
+        app:cardUseCompatPadding="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@null"
+            android:minHeight="225dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/calibrib"
+                android:text="Poll results !!"
+                android:textColor="#FFFFFF"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:drawablePadding="10dp"
+                app:drawableLeftCompat="@drawable/outline_poll_24"
+                app:drawableTint="#E91E63" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/calibri"
+                android:layout_marginHorizontal="15dp"
+                android:layout_gravity="start"
+                android:textAlignment="textStart"
+                android:text="Q This is a sample question to test the alignment and stuff in this card view"
+                android:textColor="#E6E6E6" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="15dp"
+                android:minHeight="50dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="7dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="7dp"
+                    app:cardBackgroundColor="#01040C">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ProgressBar
+                            android:id="@+id/progressOpt1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                            android:progress="0"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="-5dp"
+                            android:progressTint="#03A9F4"/>
+
+                        <TextView
+                            android:id="@+id/resTxt1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/calibri"
+                            android:textColor="#f3f3f3"
+                            android:textSize="15sp"
+                            android:gravity="center_vertical"
+                            android:layout_marginStart="15sp"
+                            android:text="Option A : Total poll percent is 0"/>
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="5dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="7dp"
+                    app:cardBackgroundColor="#01040C">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ProgressBar
+                            android:id="@+id/progressOpt2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                            android:progress="0"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="-5dp"
+                            android:progressTint="#03A9F4"/>
+
+                        <TextView
+                            android:id="@+id/resTxt2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/calibri"
+                            android:textColor="#fff"
+                            android:textSize="15sp"
+                            android:gravity="center_vertical"
+                            android:layout_marginStart="15sp"
+                            android:text="Option B : Total poll percent is 0"/>
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="5dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="7dp"
+                    app:cardBackgroundColor="#01040C">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ProgressBar
+                            android:id="@+id/progressOpt3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                            android:progress="0"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="-5dp"
+                            android:progressTint="#03A9F4"/>
+
+                        <TextView
+                            android:id="@+id/resTxt3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/calibri"
+                            android:textColor="#fff"
+                            android:textSize="15sp"
+                            android:gravity="center_vertical"
+                            android:layout_marginStart="15sp"
+                            android:text="Option C : Total poll percent is 0"/>
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="5dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="7dp"
+                    app:cardBackgroundColor="#01040C">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ProgressBar
+                            android:id="@+id/progressOpt4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                            android:progress="0"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="-5dp"
+                            android:progressTint="#03A9F4"/>
+
+                        <TextView
+                            android:id="@+id/resTxt4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/calibri"
+                            android:textColor="#fff"
+                            android:textSize="15sp"
+                            android:gravity="center_vertical"
+                            android:layout_marginStart="15sp"
+                            android:text="Option D : Total poll percent is 0"/>
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/calibrib"
+                android:layout_marginHorizontal="15dp"
+                android:layout_gravity="center_horizontal"
+                android:text="OPTIONS SELECTED BY USERS"
+                android:textColor="#fff" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginVertical="7dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="7dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginHorizontal="15dp"
+                app:cardBackgroundColor="#01040C">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="8">
+                    <TextView
+                        android:id="@+id/tittle"
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:textColor="#fff"
+                        android:text="Account id"
+                        android:fontFamily="@font/calibrib"
+                        android:maxLines="1"
+                        android:gravity="center_vertical"
+                        android:layout_marginStart="15dp" />
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_weight="4"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:textColor="#fff"
+                        android:text="Submitted on"
+                        android:fontFamily="@font/calibrib"
+                        android:maxLines="1"
+                        android:gravity="center_vertical"/>
+
+                    <TextView
+                        android:id="@+id/option"
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:textColor="#fff"
+                        android:text="Option"
+                        android:fontFamily="@font/calibrib"
+                        android:maxLines="1"
+                        android:gravity="center_vertical"
+                        android:layout_marginEnd="15dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:id="@+id/usersOption"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:weightSum="2"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/exit"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text="DISMISS"
+                    android:textColor="#fff"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@drawable/button_login_blue"
+                    android:backgroundTint="#017C70"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

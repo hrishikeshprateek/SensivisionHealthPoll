@@ -1,0 +1,27 @@
+# Admin and user account credentials which are generated automatically :
+
+ADMIN
+1.
+ID : AD01
+LOGIN ID : 7301694135
+USER NAME : Hrishikesh prateek
+PIN : 1909
+
+2
+ID : AD02
+LOGIN ID : 7506081242
+USER NAME : Amala Nair C
+PIN : 2234
+
+USER
+1.
+ID : VT01
+LOGIN ID : 7301694136
+USER NAME : Hrishikesh prateek User
+PIN : 1909
+
+2.
+ID : VT02
+LOGIN ID : 7506081243
+USER NAME : Amala Nair C User
+PIN : 2234

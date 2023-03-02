@@ -21,7 +21,7 @@ import thundersharp.sensivisionhealth.poll.core.room.PollResponseDatabase;
 
 public class PollDisplayUtil {
 
-    public static void displayDialogPoll(Context context, PollDataModel pollDataModel){
+    public void displayDialogPoll(Context context, PollDataModel pollDataModel){
         View view = LayoutInflater.from(context).inflate(R.layout.viewpoll_dialog, null, false);
         AlertDialog alertDialog = new AlertDialog.Builder(context)
                 .setView(view).setCancelable(false).create();
